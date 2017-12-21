@@ -1,0 +1,179 @@
+Please answer the below core-java Questions:
+
+
+What jdk contains or composed of and define each components?
+
+The Java Developer's Kit contains a variety of tools and Java development information. Following is a list of the main components of the JDK:
+The Runtime Interpreter
+The Compiler
+The Applet Viewer
+The Debugger
+The Class File Disassembler
+The Header and Stub File Generator
+The Documentation Generator
+Applet Demos
+API Source Code
+
+What is IDE?
+
+An integrated development environment (IDE) is a software set that joins the basic tools developers need to write and test software.
+
+What are the IDEs available in the market to support java?
+NetBeans , Eclipse, IntelliJ IDEA Community Edition, BlueJ etc.
+
+Explain the entire java life cycle.
+A Java program is written using either a Text Editor like Textpad or an IDE like Eclipse and is saved as a .java file. (Program.java)
+The .java file is then compiled using Java compiler and a .class file is obtained from it. (Program.class)
+The .class file is now portable and can be used to run this Java program in any platform.
+Class file (Program.class) is interpreted by the JVM installed on a particular platform. JVM is part of the JRE software.
+
+
+what is class?
+It is a blueprint or a set of instruction to build a specific type of object.
+
+What is object?
+An object is nothing but a self-contained component which consists of methods and properties to make a specific type of data useful. Object determines the behavior of the class.
+
+What is the entry point of an application?
+
+The main method is the method that's defined to be called at the start of an application. Without it, there is no place to start running.
+
+
+
+Why main is static?
+Before the main method is called, no objects are instantiated. Having the static keyword means the method can be called without creating any objects first.
+
+What is the difference between an Interface and Abstract class?
+Type of methods: Interface can have only abstract methods. Abstract class can have abstract and non-abstract methods. From Java 8, it can have default and static methods also.
+Final Variables: Variables declared in a Java interface are by default final. An abstract class may contain non-final variables.
+Type of variables: Abstract class can have final, non-final, static and non-static variables. Interface has only static and final variables.
+Implementation: Abstract class can provide the implementation of interface. Interface can’t provide the implementation of abstract class.
+Inheritance vs Abstraction: A Java interface can be implemented using keyword “implements” and abstract class can be extended using keyword “extends”.
+Multiple implementation: An interface can extend another Java interface only, an abstract class can extend another Java class and implement multiple Java interfaces.
+Accessibility of Data Members: Members of a Java interface are public by default. A Java abstract class can have class members like private, protected, etc.
+
+Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+what is Access Specifier?
+ Access Specifiers regulate access to classes, fields and methods in Java. These Specifiers determine whether a field or method in a class, can be used or invoked by another method in another class or sub-class. Access Specifiers can be used to restrict access.
+What is OOP ? Define each feature of java OOP.
+OOP: Object Oriented Programming
+1)Abstraction
+2)Encapsulation
+3)Inheritance
+4)Polymorphism
+
+
+
+What is API? Name list of API that you have used so far.
+An application program interface (API) is a set of routines, protocols, and tools for building software applications. Basically, an API specifies how software components should interact.
+
+Does java support multiple inheritance?
+Yes but through interface only
+
+What is method overloading and when it happens?
+
+In overloading we can have the same name but different parameters
+
+Explain exceptions in java and how to handle it.
+
+Java provides two different options to handle an exception. You can either use the try-catch-finally approach to handle all kinds of exceptions. Or you can use the try-with-resource approach which allows an easier cleanup process for resources.
+What is static keyword in java? How it has been used in variables and methods ?
+
+
+What is final and how it has been used variables and methods?
+What is final, finally and finalize?
+
+final:
+	final is a keyword. The variable decleared as final should be
+	initialized only once and cannot be changed. Java classes
+	declared as final cannot be extended. Methods declared as final
+	cannot be overridden.
+
+finally:
+	finally is a block. The finally block always executes when the
+	try block exits. This ensures that the finally block is executed
+	even if an unexpected exception occurs. But finally is useful for
+	more than just exception handling - it allows the programmer to
+	avoid having cleanup code accidentally bypassed by a return,
+	continue, or break. Putting cleanup code in a finally block is
+	always a good practice, even when no exceptions are anticipated.
+
+finalize:
+	finalize is a method. Before an object is garbage collected, the
+	runtime system calls its finalize() method. You can write system
+	resources release code in finalize() method before getting garbage
+	collected.
+
+What is a constructor ?
+A constructor is an instance method that usually has the same name as the class, and can be used to set the values of the members of an object, either to default or to user-defined values.
+
+What is "this" keyword in java ?
+this. is a reference variable in Java that refers to the current object.
+
+What is "super" keyword in java?
+
+-"Super" keyword is used to call the constructor, methods and properties of a parent class. -super can be used to refer immediate parent class instance variable. -super can be used to invoke immediate parent class method. -super() can be used to invoke immediate parent class constructor.
+
+What is JVM stand for ?
+A Java virtual machine (JVM) is an abstract computing machine that enables a computer to run a Java program.
+
+What version of java are you using?
+9.0
+What is JAR stand for ?
+
+JAR stands for Java Archive. It is a compressed file, which means that it is a file that has been reduced in size.
+What is compile time and run time?
+
+When an application is running, it is called runtime. -The source code must be compiled into machine code in order to become and executable program, this is referred to as compile time.
+What is heap?
+
+A heap is an area of pre-reserved computer main storage ( memory ) that a program process can use to store data in some variable amount that won't be known until the program is running.
+
+How java manage it's memory?
+Java objects reside in an area called the heap. The heap is created when the JVM starts up and may increase or decrease in size while the application run
+
+What is the difference between String, StringBuffer and StringBuilder?
+
+String is an immutable class, it can't be changed. StringBuilder is a mutable class that can be appended to, characters replaced or removed and ultimately converted to a String StringBuffer is the original synchronized version of StringBuilder. In Other words String is immutable, if you try to alter their values, another object gets created, whereas StringBuffer and StringBuilder are mutable so they can change their values.
+
+What is Singleton class?
+The Singleton's purpose is to control object creation, limiting the number of objects to only one. Since there is only one Singleton instance, any instance fields of a Singleton will occur only once per class, just like static fields. Singletons often control access to resources, such as database connections or sockets.
+
+What is Serialization and Deserialization?
+
+Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. This mechanism is used to persist the object.
+Which one will take more memory, an int or Integer?
+int and Integer both symbolizes same number of values.
+Why is String Immutable in Java?
+
+String is immutable in Java. An immutable class is simply a class whose instances cannot be modified. All information in an instance is initialized when the instance is created and the information cannot be modified.
+
+What is constructor chaining in Java?
+
+Constructor chaining is the process of calling one constructor from another constructor with respect to current object.
+Constructor chaining can be done in two ways:
+Within same class: It can be done using this() keyword for constructors in same class
+From base class: by using super() keyword to call constructor from the base class.
+
+
+
+The difference between Serial and Parallel Garbage Collector?
+Serial garbage collector works by holding all the application threads. It is designed for the single-threaded environments. It uses just a single thread for garbage collection. The way it works by freezing all the application threads while doing garbage collection may not be suitable for a server environment. It is best suited for simple command-line programs.
+
+What is JIT stands for?
+
+Just In Time Operator
+
+Explain Java Heap space and Garbage collection?
+
+The Java Heap Space is the memory “container” of you runtime Java program which provides to your Java program the proper memory spaces it needs (Java Heap, Native Heap) and managed by the JVM itself.
+Can you guarantee the garbage collection process?
+No, it's always possible that you'll try to allocate more memory than is available.
+What is the No, it's always possible that you'll try to allocate more memory than is available.?
+Heap memory is used by all the parts of the application whereas stack memory is used only by one thread of execution.
+Whenever an object is created, it’s always stored in the Heap space and stack memory contains the reference to it. Stack memory only contains local primitive variables and reference variables to objects in heap space.
+Objects stored in the heap are globally accessible whereas stack memory can’t be accessed by other threads.
+
+
+
+
